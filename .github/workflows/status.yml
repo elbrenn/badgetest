@@ -1,0 +1,11 @@
+name: PRsimple
+on:
+  pull_request:
+    types: [ "closed" ]
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: exit 1
